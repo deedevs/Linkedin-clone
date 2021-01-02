@@ -13,6 +13,8 @@ import { auth } from "../firebase";
 
 function Header() {
   const dispatch = useDispatch();
+
+
   const logoutOfApp = () => {
     dispatch(logout());
     auth.signOut();
@@ -38,7 +40,7 @@ function Header() {
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notifications" />
         <HeaderOption
-          avatar="https://images.unsplash.com/photo-1609126778993-981e6fedef05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080"
+          avatar={true}
           title="me"
           onClick={logoutOfApp}
         />
