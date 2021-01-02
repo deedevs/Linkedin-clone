@@ -18,10 +18,10 @@ function App() {
         //Logged in
         dispatch(
           login({
-            email: userAuth.user.email,
-            uid: userAuth.user.uid,
-            displayName: userAuth.user.displayName,
-            photoUrl: userAuth.user.photoUrl,
+            email: userAuth.email,
+            uid: userAuth.uid,
+            displayName: userAuth.displayName,
+            photoUrl: userAuth.photoUrl,
           })
         );
       } else {
